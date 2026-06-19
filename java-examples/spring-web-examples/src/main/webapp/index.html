@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>This is a Home page</h1>
+	<a href = "spring/myresource/test">Say Hello</a>
+	<!-- 
+		request -> front controller -> controller -> [service->dao->] response -> view resolver
+	 -->
+	 <form action = "spring/myresource/greet" method = "post">
+	 	<input type = "text" name = "userInput" /><br />
+	 	<input type = "submit" value = "Submit">
+	 </form>
+	 <hr />
+	 <div>
+	 	<a href = "spring/myresource/users">Users List</a>
+	 </div>
+</body>
+</html>
