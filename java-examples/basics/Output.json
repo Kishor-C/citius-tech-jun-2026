@@ -1,0 +1,38 @@
+{
+  "original": [
+    {
+      "name": "Shoes",
+      "price": 2500.0
+    },
+    {
+      "name": "Shirts",
+      "price": 2000.0
+    },
+    {
+      "name": "Watch",
+      "price": 5000.0
+    },
+    {
+      "name": "Mobile",
+      "price": 12000.0
+    }
+  ],
+  "discounted": [
+    {
+      "name": "Shoes",
+      "price": 2375.0
+    },
+    {
+      "name": "Shirts",
+      "price": 1900.0
+    },
+    {
+      "name": "Watch",
+      "price": 4750.0
+    },
+    {
+      "name": "Mobile",
+      "price": 11400.0
+    }
+  ]
+}

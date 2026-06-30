@@ -1,0 +1,7 @@
+com\examples\model\User.class
+com\examples\service\UserServiceImpl.class
+com\examples\dao\UserDao.class
+com\examples\controller\MyApi.class
+com\examples\service\UserService.class
+com\examples\dao\UserDaoJdbcImpl.class
+com\examples\controller\MyResource.class
