@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Parent Component</h1>
+  <div class="alert alert-primary">
+    <h2>Counter: {{ childCounter }}</h2>
+    <app-child (countEmitter)="childCounter = $event"></app-child>
+  </div>
+  <div class="text-center">
+    <app-child [user]="usersDB[0]"></app-child>
+    <h2>Using for loop to iterate child</h2>
+    <div *ngFor="let u of usersDB">
+      <app-child [user]="u"></app-child>
+    </div>
+  </div>
+</div>

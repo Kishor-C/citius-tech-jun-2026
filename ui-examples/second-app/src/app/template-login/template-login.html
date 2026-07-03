@@ -1,0 +1,42 @@
+<div class="container-fluid">
+  <h3>Template Login Form</h3>
+  <form #loginInput="ngForm" (ngSubmit)="handleLogin(loginInput.value)">
+    <label>
+      Enter username
+      <input
+        type="text"
+        name="username"
+        #usernameRef="ngModel"
+        [(ngModel)]="username"
+        autocomplete="off"
+        class="form form-control-lg"
+        required
+        minlength="5"
+        maxlength="15"
+      />
+      <span [hidden]="usernameRef.valid || usernameRef.pristine" class="text-danger">
+        Username is required and must between 5 to 15 characters</span
+      >
+    </label>
+    <br />
+    <label>
+      Enter password
+      <input
+        type="password"
+        name="password"
+        #passwordRef="ngModel"
+        [(ngModel)]="password"
+        autocomplete="off"
+        class="form form-control-lg"
+        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      />
+      <span [hidden]="passwordRef.valid || passwordRef.pristine" class="text-danger">
+        Password must contain at least one number, one uppercase, one lowercase letter, and at least
+        8 characters.</span
+      >
+    </label>
+    <div>
+      <button type="submit" class="btn btn-primary btn-lg">Login</button>
+    </div>
+  </form>
+</div>

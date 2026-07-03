@@ -1,31 +1,4 @@
-<div>
-  <h1>Two way databinding</h1>
-  <input type="text" [(ngModel)]="name" /><br />
-  <input type="text" [(ngModel)]="name" />
-
-  <h1>Databinding</h1>
-  <h2 [hidden]="isDisabled">Property Binding Example</h2>
-  <p>Is Disabled = {{ isDisabled }}</p>
-  <button [disabled]="isDisabled">Button</button>
-  <button disabled="isDisabled">Button Again</button>
-  <h2>Event Binding Example</h2>
-  <button (click)="toggle()">Toggle</button>
-
-  <div>
-    <input type="text" #message />
-    <button (click)="userInput(message.value)">Send Data</button>
-  </div>
-
-  <app-user-item />
-  <h1>This our first angular app</h1>
-  <h2>Hello {{ name }}</h2>
-  <h2>Service Details:-</h2>
-  <h3>
-    <p>Id: {{ service.id }}</p>
-    <p>Name: {{ service.name }}</p>
-    <p>Price: {{ service.price }}</p>
-    <p>Rating: {{ service.rating }}</p>
-  </h3>
+<div class="container-fluid">
+  <h1 class="text-center">This is root component</h1>
+  <app-parent></app-parent>
 </div>
-<!-- create a paragraph hide or show the element when 
- you click on the toggle button -->

@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <h3>Reactive Login Form</h3>
+  <h5 *ngIf="message != ''" class="alert alert-info">{{ message }}</h5>
+  <form [formGroup]="loginForm" (ngSubmit)="handleLogin()">
+    <div>
+      <label>
+        Enter username
+        <input type="text" formControlName="username" class="form-control-lg" />
+        <span
+          class="alert alert-danger"
+          [hidden]="loginForm.controls['username'].valid || loginForm.controls['username'].pristine"
+          >Username is must be minimum 5 characters</span
+        >
+      </label>
+    </div>
+    <div>
+      <label>
+        Enter password
+        <input type="password" formControlName="password" class="form-control-lg" />
+      </label>
+    </div>
+    <div>
+      <button type="submit" class="btn btn-lg btn-primary">Login</button>
+    </div>
+  </form>
+</div>

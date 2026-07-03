@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <h3>Users List</h3>
+  <button class="btn btn-lg btn-primary" (click)="handleClick()">Fetch Users</button>
+  <div>
+    <table class="table" *ngIf="users">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Dob</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let u of users">
+          <td>{{ u.id }}</td>
+          <td>{{ u.name }}</td>
+          <td>{{ u.dob }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
